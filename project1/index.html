@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Island Jumper</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h2 class="logo">ISLAND JUMPER</h2>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#controls">Controls</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Landing Page -->
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="tagline">A LITTLE ADVENTURE ABOVE THE CLOUDS</p>
+
+                <h1>ISLAND<br>JUMPER</h1>
+
+                <p class="description">
+                    Explore floating islands, collect magical stars
+                    and discover a world beyond the clouds.
+                </p>
+
+                <button onclick="startGame()">
+                    START ADVENTURE
+                </button>
+
+                <p class="small-text">
+                    Your adventure is waiting...
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Game Screen -->
+        <section id="game" class="game-screen">
+
+            <h2>YOUR ADVENTURE BEGINS!</h2>
+
+            <p>Welcome to the floating islands.</p>
+
+            <button onclick="goHome()">BACK TO HOME</button>
+
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="info-section">
+
+            <h2>ABOUT THE GAME</h2>
+
+            <p>
+                Island Jumper is a small adventure game
+                where you jump across floating islands,
+                collect stars and explore new places.
+            </p>
+
+        </section>
+
+        <!-- Controls Section -->
+        <section id="controls" class="info-section">
+
+            <h2>HOW TO PLAY</h2>
+
+            <p>← → Move your character</p>
+            <p>SPACE Jump across islands</p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Island Jumper | Made with HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="game.js"></script>
+
+</body>
+</html>
