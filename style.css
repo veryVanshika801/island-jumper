@@ -159,3 +159,212 @@ footer {
     }
 
 }
+
+
+/* ISLAND JUMPER - FANTASY WORLD */
+
+.hero {
+    position: relative;
+    min-height: 88vh;
+    overflow: hidden;
+    background: linear-gradient(
+        to bottom,
+        #123c70,
+        #2879a8,
+        #a4d9d5
+    );
+}
+
+/* Stars */
+
+.stars {
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    color: #fff5bb;
+    font-size: 25px;
+    letter-spacing: 15px;
+}
+
+/* Clouds */
+
+.cloud {
+    position: absolute;
+    width: 130px;
+    height: 35px;
+    background: #f3f4e8;
+    border-radius: 50px;
+    opacity: 0.85;
+}
+
+.cloud::before {
+    content: "";
+    position: absolute;
+    width: 65px;
+    height: 55px;
+    background: #f3f4e8;
+    border-radius: 50%;
+    top: -25px;
+    left: 25px;
+}
+
+.cloud-one {
+    top: 18%;
+    left: 12%;
+}
+
+.cloud-two {
+    top: 30%;
+    right: 10%;
+    transform: scale(1.3);
+}
+
+/* Floating Islands */
+
+.island {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+}
+
+.island-one {
+    top: 15%;
+    left: 8%;
+    transform: rotate(-5deg);
+}
+
+.island-two {
+    top: 35%;
+    right: 8%;
+    transform: scale(0.8);
+}
+
+.grass {
+    height: 28px;
+    background: #80c94e;
+    border: 4px solid #477f38;
+    border-radius: 12px;
+    position: relative;
+    z-index: 2;
+}
+
+.rocks {
+    width: 90px;
+    height: 65px;
+    margin: auto;
+    background: linear-gradient(
+        135deg,
+        #557d80,
+        #294c62,
+        #18344b
+    );
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 85%);
+}
+
+/* Main Island */
+
+.bottom-island {
+    position: absolute;
+    width: 115%;
+    height: 150px;
+    bottom: -100px;
+    left: -8%;
+}
+
+.bottom-grass {
+    height: 35px;
+    background: #76bd46;
+    border-radius: 50% 50% 0 0;
+}
+
+.bottom-rocks {
+    height: 120px;
+    background: #294e58;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+}
+
+/* Explorer */
+
+.explorer {
+    position: absolute;
+    bottom: 35px;
+    left: 15%;
+    text-align: center;
+    z-index: 3;
+}
+
+.character {
+    font-size: 65px;
+    animation: explorerMove 2s infinite ease-in-out;
+}
+
+.backpack {
+    display: none;
+}
+
+.explorer p {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+/* Animations */
+
+@keyframes explorerMove {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* Hero Content */
+
+.hero-content {
+    position: relative;
+    z-index: 5;
+    padding-top: 70px;
+}
+
+.hero h1 {
+    font-size: 85px;
+    color: #e5f5b1;
+    text-shadow: 4px 5px #254c5b;
+}
+
+.hero button {
+    border-radius: 4px;
+    box-shadow: 0 5px #648e50;
+}
+
+.hero button:active {
+    transform: translateY(4px);
+    box-shadow: none;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+    .island-one {
+        left: -25px;
+    }
+
+    .island-two {
+        right: -35px;
+    }
+
+    .explorer {
+        left: 5%;
+        bottom: 30px;
+    }
+
+    .character {
+        font-size: 45px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+}
